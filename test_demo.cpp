@@ -9,7 +9,7 @@
 //
 // Check valid inputs.
 //
-TEST_CASE("Factorials are computed", "[factorial]")
+TEST_CASE("Check positives", "[factorial]")
 {
     REQUIRE(factorial(0) == 1);
     REQUIRE(factorial(1) == 1);
@@ -21,7 +21,7 @@ TEST_CASE("Factorials are computed", "[factorial]")
 //
 // Invalid input: exception is expected.
 //
-TEST_CASE( "Factorial of negative", "[factorial]")
+TEST_CASE( "Check negatives", "[factorial]")
 {
     REQUIRE_THROWS(factorial(-1));
 }

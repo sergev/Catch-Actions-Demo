@@ -1,5 +1,6 @@
 OBJ             = demo.o test_demo.o
-CXXFLAGS        = -std=c++11 -Wall -Werror
+CXXFLAGS        = -std=c++11 -O -g -Wall -Werror
+LDFLAGS         = -g
 
 all:            demo
 
@@ -10,4 +11,4 @@ clean:
 		rm -f *.o demo
 
 test:           demo
-		./demo -s
+		./demo -s -r compact
