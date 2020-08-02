@@ -2,8 +2,6 @@
 // Test the factorial() function.
 //
 #include "demo.hpp"
-
-#define CATCH_CONFIG_MAIN
 #include "catch.hpp"
 
 //

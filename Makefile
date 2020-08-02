@@ -1,4 +1,4 @@
-OBJ             = demo.o test_demo.o
+OBJ             = demo.o test_demo.o catch.o
 CXXFLAGS        = -std=c++11 -O -g -Wall -Werror
 LDFLAGS         = -g
 
