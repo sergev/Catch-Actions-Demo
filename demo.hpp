@@ -1,1 +1,1 @@
-unsigned fibonacci(unsigned index);
+unsigned long fibonacci(unsigned index);

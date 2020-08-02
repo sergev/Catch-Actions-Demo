@@ -4,9 +4,9 @@
 #include <stdexcept>
 #include "demo.hpp"
 
-static unsigned fib_recursive(unsigned index, unsigned iteration, unsigned prev2, unsigned prev1)
+static unsigned long fib_recursive(unsigned index, unsigned iteration, unsigned long prev2, unsigned long prev1)
 {
-    unsigned sum = prev2 + prev1;
+    auto sum = prev2 + prev1;
 
     // Check for overflow.
     if (sum < prev1)
@@ -20,7 +20,7 @@ static unsigned fib_recursive(unsigned index, unsigned iteration, unsigned prev2
     return fib_recursive(index, iteration, prev1, sum);
 }
 
-unsigned fibonacci(unsigned index)
+unsigned long fibonacci(unsigned index)
 {
     if (index < 2)
         return index;
