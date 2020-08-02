@@ -5,9 +5,9 @@ Here you can find a demo of a C++ application with an automated testing using Gi
 Anytime you want to start a new project in C++, feel free to use this code as a skeleton.
 Copy the contents to your repository and build your code upon it.
 
-File demo.cpp contains a code for factorial() function.
+File demo.cpp contains a code for fibonacci() function.
 
-File test_demo.cpp has a few tests to make sure the factorial() function works correctly.
+File test_demo.cpp has a few tests to make sure the fibonacci() function works correctly.
 
 To test the code from command line, run:
 

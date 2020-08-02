@@ -1,5 +1,5 @@
 //
-// Test the factorial() function.
+// Test the fibonacci() function.
 //
 #include "demo.hpp"
 #include "catch.hpp"
@@ -7,19 +7,23 @@
 //
 // Check valid inputs.
 //
-TEST_CASE("Check positives", "[factorial]")
+TEST_CASE("Check valid input", "[fibonacci]")
 {
-    REQUIRE(factorial(0) == 1);
-    REQUIRE(factorial(1) == 1);
-    REQUIRE(factorial(2) == 2);
-    REQUIRE(factorial(3) == 6);
-    REQUIRE(factorial(10) == 3628800);
+    REQUIRE(fibonacci(0) == 0);
+    REQUIRE(fibonacci(1) == 1);
+    REQUIRE(fibonacci(2) == 1);
+    REQUIRE(fibonacci(3) == 2);
+    REQUIRE(fibonacci(4) == 3);
+    REQUIRE(fibonacci(5) == 5);
+    REQUIRE(fibonacci(20) == 6765);
+    REQUIRE(fibonacci(40) == 102334155);
+    REQUIRE(fibonacci(47) == 2971215073);
 }
 
 //
-// Invalid input: exception is expected.
+// Invalid inputs: exception is expected.
 //
-TEST_CASE( "Check negatives", "[factorial]")
+TEST_CASE( "Check overflow", "[fibonacci]")
 {
-    REQUIRE_THROWS(factorial(-1));
+    REQUIRE_THROWS(fibonacci(100));
 }

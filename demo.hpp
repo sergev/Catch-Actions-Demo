@@ -1,1 +1,1 @@
-int factorial(int number);
+unsigned fibonacci(unsigned index);
