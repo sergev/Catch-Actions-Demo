@@ -2,7 +2,7 @@
 // Test the fibonacci() function.
 //
 #include "demo.hpp"
-#include "catch.hpp"
+#include "catch/catch.hpp"
 
 //
 // Check valid inputs.

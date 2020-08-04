@@ -1,4 +1,4 @@
-![Python package](https://github.com/sergev/Pytest-Actions-Demo/workflows/Python%20package/badge.svg)
+![C/C++ CI](https://github.com/sergev/Catch-Actions-Demo/workflows/C/C++%20CI/badge.svg)
 
 Here you can find a demo of a C++ application with an automated testing using Github Actions service.
 
@@ -25,5 +25,5 @@ Source files:
  * demo.hpp - declaration of fibonacci() routine
  * demo.cpp - implementation of fibonacci() routine
  * test_demo.cpp - tests for fibonacci() routine, using Catch
- * catch.hpp - header-only version of Catch2 framework, downloaded from https://github.com/catchorg/Catch2/releases/download/v2.13.0/catch.hpp
- * catch.cpp - placeholder for the main() routine of Catch2 framework
+ * catch/catch.hpp - header-only version of Catch2 framework, downloaded from https://github.com/catchorg/Catch2/releases/download/v2.13.0/catch.hpp
+ * catch/catch.cpp - placeholder for the main() routine of Catch2 framework
